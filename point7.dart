@@ -5,13 +5,13 @@ void point7() {
 
   var Celsius = 20;
 
-  var Fahrenheit = (1.8 * 25) + 32;
+  var Fahrenheit = (Celsius * (9 / 5)) + 32;
   print("$Fahrenheit oF");
 
   print("Next");
 
   var _Fahrenheit = 20;
 
-  var _Celsius = (_Fahrenheit - 32) + 5 / 9;
-  print("$Celsius oC");
+  var _Celsius = (_Fahrenheit - 32) * 5 / 9;
+  print("$_Celsius oC");
 }
