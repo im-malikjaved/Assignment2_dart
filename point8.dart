@@ -14,6 +14,23 @@ void point8() {
   print("Please Select Any One (+ , - , * , / , % )");
   var givenoperation = stdin.readLineSync();
 
+  print("Task Example");
+  if (givenoperation == '+') {
+    print("Sum of The Value is =  ${FirstNumber + SecondNumber}");
+  } else if (givenoperation == '-') {
+    print("Subtract of The Value is =  ${FirstNumber - SecondNumber}");
+  } else if (givenoperation == '*' || givenoperation == 'x') {
+    print("Multiply of The Value is =  ${FirstNumber * SecondNumber}");
+  } else if (givenoperation == '/') {
+    print("Divide of The Value is =  ${FirstNumber / SecondNumber}");
+  } else if (givenoperation == '%') {
+    print("Modulus of The Value is =  ${FirstNumber % SecondNumber}");
+  } else {
+    print("Given a Valid Operator");
+  }
+
+  print("");
+  print("Real Example");
   switch (givenoperation) {
     case "+":
       print(
